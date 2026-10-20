@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+mkdir -p build
+javac --release 17 -d build RoutePlanner.java RoutePlannerTest.java
+java -ea -cp build RoutePlannerTest
